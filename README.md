@@ -204,14 +204,6 @@ And I did the same VM creation on AWS that looks like this:
 
 ![awsoverview](images/awsoverview.png)
 
-Details about the Azure Linux VM:
-
-![azurevm](images/azurevm.png)
-
-Details about the AWS Linux VM:
-
-![awsvm](images/awsvm.png)
-
 Then we can test the connectivity betweeen AWS and Azure through our VPN connection:
 
 ![azureping](images/azureping.png)
