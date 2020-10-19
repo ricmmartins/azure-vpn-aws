@@ -13,7 +13,7 @@ So in this article I'll show to you how to setup this. Below the draw of our lab
 
 ## Configuring Azure 
 
-1. 	1. Create a resource group on Azure to deploy the  resources on that:
+1. Create a resource group on Azure to deploy the  resources on that:
 
 ![newrg](images/newrg.png)
 
