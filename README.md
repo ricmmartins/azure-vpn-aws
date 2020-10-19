@@ -88,7 +88,7 @@ The Azure VPN Gateway is a resource composed of 2 or more VM's that are deployed
  
  ![createvpnconnection](images/createvpnconnection.png)
  
- Set the routing as static pointing to the azure subnet-01 prefix (172.10.1.0/24)
+ Set the routing as static pointing to the azure subnet-01 prefix **(172.10.1.0/24)**
  
  ![setstaticroute](images/setstaticroute.png)
  
@@ -96,7 +96,7 @@ The Azure VPN Gateway is a resource composed of 2 or more VM's that are deployed
  
  ### 9. Download the configuration file
  
- Please note that you need to change the Vendor, Platform and Software to Generic once Azure isn't a valid option:
+ Please note that you need to change the Vendor, Platform and Software to **Generic** since Azure isn't a valid option:
  
  ![downloadconfig](images/downloadconfig.png)
  
@@ -114,7 +114,62 @@ The Azure VPN Gateway is a resource composed of 2 or more VM's that are deployed
  
  ![awsvpnconfig](images/awsvpnconfig.png)
  
+ ## Adding the AWS information on Azure Configuration
  
+ ### 10. Now let’s create the Local Network Gateway
+ 
+ The Local Network Gateway is an Azure resource with information to Azure about the customer gateway device, in this case the AWS Virtual Private Gateway
+ 
+ ![newlng](images/newlng.png)
+ 
+ ![createnewlng](images/createnewlng.png)
+
+Now you need to specify the public ip address from the AWS Virtual Private Gateway and the VPC CIDR prefix. 
+
+Please note that the public address from the AWS Virtual Private Gateway is described at the configuration file you have downloaded.
+
+As mentioned earlier, AWS creates two IPSec tunnels to high availability purposes. I'll use the public ip address from the IPSec Tunnel #1 for now.
+
+![lngovwerview](images/lngovwerview.png)
+
+### 11. Then let's create the connection on the Virtual Network Gateway
+
+![createconnection](images/createconnection.png)
+
+![createconnection2](images/createconnection2.png)
+
+You should fill the fields according below. Please note that the Shared key was obtained at the configuration file downloaded earlier and In this case, I'm using the Shared Key for the Ipsec tunnel #1 created by AWS and described at the configuration file.
+
+![createconnection3](images/createconnection3.png)
+
+After a few minutes, you can see the connection stablished:
+
+![connectionstablished](images/connectionstablished.png)
+
+In the same way, we can check on AWS that the 1st tunnel is up:
+
+![awsconnectionstablished](images/awsconnectionstablished.png)
+
+### 12. Adding high availability
+
+Now we can create a 2nd connection to ensure high availability. To do this let's create another Local Network Gateway which we will point to the public ip address of the IPSec tunnel #2 on the AWS
+
+![createlngstandby](images/createlngstandby.png)
+
+Then we can create the 2nd connection on the Virtual Network Gateway:
+
+![createconnectionstandby](images/createconnectionstandby.png)
+
+And in a few moments we'll have:
+
+![azuretunnels](images/azuretunnels.png)
+
+![awstunnels](images/awstunnels.png)
+
+With this, our VPN connection is stablished on both sides and the work is done. Just for testing purposes, we can add the following steps:
+
+
+
  
  
  
