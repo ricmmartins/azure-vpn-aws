@@ -60,6 +60,68 @@ The Azure VPN Gateway is a resource composed of 2 or more VM's that are deployed
  
  ![vpnready](images/vpnready.png)
  
+ ## Configuring AWS
+ 
+ ### 4. Create the Virtual Private Cloud (VPC)
+ 
+ ![createvpc](images/createvpc.png)
+ 
+ ### 5. Create a subnet inside the VPC (Virtual Network)
+ 
+ ![createsubnetvpc](images/createsubnetvpc.png)
+ 
+ ### 6. Ceate a customer gateway pointing to the public ip address of Azure VPN Gateway
+ 
+ The Customer Gateway is an AWS resource with information to AWS about the customer gateway device, which in this case is the Azure VPN Gateway.
+ 
+ ![createcustomergw](images/createcustomergw.png)
+ 
+ ### 7. Create the virtual private gateway then attach to the VPC
+ 
+ ![createvpg](images/createvpg.png)
+ 
+ ![attachvpgtovpc](images/attachvpgtovpc.png)
+ 
+ ![attachvpgtovpc2](images/attachvpgtovpc2.png)
+ 
+ ### 8. Create a site-to-site VPN Connection
+ 
+ ![createvpnconnection](images/createvpnconnection.png)
+ 
+ Set the routing as static pointing to the azure subnet-01 prefix (172.10.1.0/24)
+ 
+ ![setstaticroute](images/setstaticroute.png)
+ 
+ After fill the options, click to create.
+ 
+ ### 9. Download the configuration file
+ 
+ Please note that you need to change the Vendor, Platform and Software to Generic once Azure isn't a valid option:
+ 
+ ![downloadconfig](images/downloadconfig.png)
+ 
+ In this configuration file you will note that there are the Shared Keys and the Public Ip Address for each of one of the two IPSec tunnels created by AWS:
+ 
+ ![ipsec1](images/ipsec1.png)
+  
+ ![ipsec1config](images/ipsec1config.png)
+  
+ ![ipsec2](images/ipsec2.png)
+   
+ ![ipsec2config](images/ipsec2config.png)
+ 
+ After the creation, you should have something like this:
+ 
+ ![awsvpnconfig](images/awsvpnconfig.png)
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
  
