@@ -56,7 +56,9 @@ The Azure VPN Gateway is a resource composed of 2 or more VM's that are deployed
  
  ![vpngwsummary](images/vpngwsummary.png)
  
+ After click to Review + create, in a few minutes the Virtual Network Gateway will be ready:
  
+ ![vpnready](images/vpnready.png)
  
  
  
