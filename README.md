@@ -46,7 +46,7 @@ The Azure VPN Gateway is a resource composed of 2 or more VM's that are deployed
 
  To create, go to your Resource Group, then click to **+ Add**
  
- ![addvpngw](images/addvpngw.png)
+ ![addvpngw](images/addvpngw.PNG)
  
  ![newvpngw](images/newvpngw.png)
  
