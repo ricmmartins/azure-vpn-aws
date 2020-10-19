@@ -184,34 +184,34 @@ After create, let's attach to the VPC:
  
 ![attachigw](images/attachigw.png)
 
-![attachigw2](images/attachigw2png)
+![attachigw2](images/attachigw2.png)
 
 Now we can create a route to allow connections to 0.0.0.0/0 (Internet) through the Internet Gateway:
 
-![allowinternetigw](images/allowinternetigw)
+![allowinternetigw](images/allowinternetigw.png)
 
 On Azure the route was automatically created. You can check selecting the Azure VM > Networking > Network Interface > Effective routes. Note that we 2 (1 per connection):
 
-![azureeffectiveroutes](images/azureeffectiveroutes)
+![azureeffectiveroutes](images/azureeffectiveroutes.png)
 
 Now I've created a Linux VM on Azure and our environment looks like this:
 
-![azoverview](images/azoverview)
+![azoverview](images/azoverview.png)
 
 And I did the same VM creation on AWS that looks like this:
 
-![awsoverview](images/awsoverview)
+![awsoverview](images/awsoverview.png)
 
 Details about the Azure Linux VM:
 
-![azurevm](images/azurevm)
+![azurevm](images/azurevm.png)
 
 Details about the AWS Linux VM:
 
-![awsvm](images/awsvm)
+![awsvm](images/awsvm.png)
 
 Then we can test the connectivity betweeen AWS and Azure through our VPN connection:
 
-![azureping](images/azureping)
+![azureping](images/azureping.png)
 
-![awsping](images/awsping)
+![awsping](images/awsping.png)
