@@ -10,3 +10,17 @@ So in this article I'll show to you how to setup this. Below the draw of our lab
 
 
 ![draw](images/draw.png)
+
+## Configuring Azure 
+
+1. 	1. Create a resource group on Azure to deploy the  resources on that:
+
+![newrg](images/newrg.png)
+
+![createrg](images/createrg.png)
+
+Choose the subscription, the name and the region to be deployed:
+
+![creatingrg](images/creatingrg.png)
+
+2. Create a Virtual Network and a subnet
