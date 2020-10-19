@@ -168,10 +168,56 @@ And in a few moments we'll have:
 
 With this, our VPN connection is stablished on both sides and the work is done. Just for testing purposes, we can add the following steps:
 
+### 13. To test, let's edit the route table associated with our VPC
+
+![editawsroute](images/editawsroute.png)
+
+And add the route to Azure subnet through the Virtual Private Gateway:
+
+![saveawsroute](images/saveawsroute.png)
+
+Then let's add an Internet Gateway which is a logical connection between an Amazon VPN and the Internet. This resource will allow us to connect through the test VM from their public ip through internet. This is not required for the VPN connection, is just for our test:
+
+![createigw](images/createigw.png)
+
+After create, let's attach to the VPC:
+ 
+![attachigw](images/attachigw.png)
+
+![attachigw2(images/attachigw2png)
+
+Now we can create a route to allow connections to 0.0.0.0/0 (Internet) through the Internet Gateway:
+
+![allowinternetigw(images/allowinternetigw)
+
+On Azure the route was automatically created. You can check selecting the Azure VM > Networking > Network Interface > Effective routes. Note that we 2 (1 per connection):
+
+![azureeffectiveroutes(images/azureeffectiveroutes)
+
+Now I've created a Linux VM on Azure and our environment looks like this:
+
+![azoverview(images/azoverview)
+
+And I did the same VM creation on AWS that looks like this:
+
+![awsoverview(images/awsoverview)
+
+Details about the Azure Linux VM:
+
+![azurevm(images/azurevm)
+
+Details about the AWS Linux VM:
+
+![awsvm(images/awsvm)
+
+Then we can test the connectivity betweeen AWS and Azure through our VPN connection:
+
+![azureping(images/azureping)
+
+![awsping(images/awsping)
 
 
- 
- 
+
  
  
  
