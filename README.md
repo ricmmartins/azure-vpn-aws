@@ -22,7 +22,7 @@ Choose the subscription, the name and the region to be deployed:
 
 ![creating](images/creating.png)
 
-2. Create a Virtual Network and a subnet
+### 2. Create a Virtual Network and a subnet
 
 ![createvnet](images/createvnet.png)
 
@@ -33,15 +33,32 @@ Define the subscription, resource group, name and region to be deployed:
 ![vnetdefinitions](images/vnetdefinitions.png)
 
 Set the address space for the virtual network and for the subnet. 
-Here I'm defining the virtual network address space to 172.10.0.0/16, changing the "default" subnet name to " subnet-01" and defining the subnet address range to 172.10.1.0/24:
+Here I'm defining the virtual network address space to **172.10.0.0/16**, changing the "default" subnet name to **"subnet-01"** and defining the subnet address range to **172.10.1.0/24**:
 
 ![vnetaddr](images/vnetaddr.png)
 
 ![vnetvalidation](images/vnetvalidation.png)
 
 	
-3. Create the VPN Gateway
+### 3. Create the VPN Gateway
 
 The Azure VPN Gateway is a resource composed of 2 or more VM's that are deployed to a specific subnet called Gateway Subnet where the recommendation is to use a /27. He contain routing tables and run specific gateway services. Note that you can't access those VM's.
 
  To create, go to your Resource Group, then click to **+ Add**
+ 
+ ![addvpngw](images/addvpngw.png)
+ 
+ ![newvpngw](images/newvpngw.png)
+ 
+ ![createvpngw](images/createvpngw.png)
+ 
+ Then fill the fields like below:
+ 
+ ![vpngwsummary](images/vpngwsummary.png)
+ 
+ 
+ 
+ 
+ 
+ 
+ 
