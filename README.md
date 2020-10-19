@@ -150,6 +150,14 @@ In the same way, we can check on AWS that the 1st tunnel is up:
 
 ![awsconnectionstablished](images/awsconnectionstablished.png)
 
+Now let's edit the route table associated with our VPC
+
+![editawsroute](images/editawsroute.png)
+
+And add the route to Azure subnet through the Virtual Private Gateway:
+
+![saveawsroute](images/saveawsroute.png)
+
 ### 12. Adding high availability
 
 Now we can create a 2nd connection to ensure high availability. To do this let's create another Local Network Gateway which we will point to the public ip address of the IPSec tunnel #2 on the AWS
@@ -166,17 +174,11 @@ And in a few moments we'll have:
 
 ![awstunnels](images/awstunnels.png)
 
-With this, our VPN connection is stablished on both sides and the work is done. Just for testing purposes, we can add the following steps:
+With this, our VPN connection is stablished on both sides and the work is done. 
 
-### 13. To test, let's edit the route table associated with our VPC
+### 13. Let's test!
 
-![editawsroute](images/editawsroute.png)
-
-And add the route to Azure subnet through the Virtual Private Gateway:
-
-![saveawsroute](images/saveawsroute.png)
-
-Then let's add an Internet Gateway which is a logical connection between an Amazon VPN and the Internet. This resource will allow us to connect through the test VM from their public ip through internet. This is not required for the VPN connection, is just for our test:
+First, let's add an Internet Gateway to our VPC at AWS. The Internet Gateway is a logical connection between an Amazon VPN and the Internet. This resource will allow us to connect through the test VM from their public ip through internet. This is not required for the VPN connection, is just for our test:
 
 ![createigw](images/createigw.png)
 
@@ -186,7 +188,7 @@ After create, let's attach to the VPC:
 
 ![attachigw2](images/attachigw2.png)
 
-Now we can create a route to allow connections to 0.0.0.0/0 (Internet) through the Internet Gateway:
+Now we can create a route to allow connections to **0.0.0.0/0** (Internet) through the Internet Gateway:
 
 ![allowinternetigw](images/allowinternetigw.png)
 
