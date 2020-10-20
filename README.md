@@ -192,7 +192,7 @@ Now we can create a route to allow connections to **0.0.0.0/0** (Internet) throu
 
 ![allowinternetigw](images/allowinternetigw.png)
 
-On Azure the route was automatically created. You can check selecting the Azure VM > Networking > Network Interface > Effective routes. Note that we 2 (1 per connection):
+On Azure the route was automatically created. You can check selecting the Azure VM > Networking > Network Interface > Effective routes. Note that we have 2 (1 per connection):
 
 ![azureeffectiveroutes](images/azureeffectiveroutes.png)
 
@@ -204,7 +204,7 @@ And I did the same VM creation on AWS that looks like this:
 
 ![awsoverview](images/awsoverview.png)
 
-Then we can test the connectivity betweeen AWS and Azure through our VPN connection:
+Then we can test the connectivity betweeen Azure and AWS through our VPN connection:
 
 ![azureping](images/azureping.png)
 
