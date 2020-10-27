@@ -1,6 +1,6 @@
 # How to create a VPN between Azure and AWS using only managed solutions
 
-What if you can stablish a connection between Azure and AWS using only managed solutions instead to have to use virtual machines? Did you know that since the beginning of 2019 you could do this?
+What if you can establish a connection between Azure and AWS using only managed solutions instead to have to use virtual machines? Did you know that since the beginning of 2019 you could do this?
 
 Yes, you can! Since [February/2019](https://aws.amazon.com/about-aws/whats-new/2019/02/aws-site-to-site-vpn-now-supports-ikev2/) AWS started to support IKEv2 on Site-to-Site VPN allowing their VPN managed solution to work both as initiator and responder mode, like Azure does. 
 
@@ -142,7 +142,7 @@ You should fill the fields according below. Please note that the Shared key was 
 
 ![createconnection3](images/createconnection3.png)
 
-After a few minutes, you can see the connection stablished:
+After a few minutes, you can see the connection established:
 
 ![connectionstablished](images/connectionstablished.png)
 
@@ -174,7 +174,7 @@ And in a few moments we'll have:
 
 ![awstunnels](images/awstunnels.png)
 
-With this, our VPN connection is stablished on both sides and the work is done. 
+With this, our VPN connection is established on both sides and the work is done. 
 
 ### 13. Let's test!
 
