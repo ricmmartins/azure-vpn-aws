@@ -6,7 +6,7 @@ Yes, you can! Since [February/2019](https://aws.amazon.com/about-aws/whats-new/2
 
 That said, if before you had to use an appliance or virtual machine acting as VPN Server on the other side when using the AWS Virtual Private Gateway, now you don't need anymore. You can simply connect the AWS Virtual Private Gateway with the Azure VPN Gateway directly without worry to manage IaaS resources like virtual machines.
 
-So in this article I'll show to you how to setup this. Below the draw of our lab:
+So in this article I'll show to you how to setup using static routes. Below the draw of our lab:
 
 ![draw](images/draw.png)
 
@@ -209,3 +209,9 @@ Then we can test the connectivity betweeen Azure and AWS through our VPN connect
 ![azureping](images/azureping.png)
 
 ![awsping](images/awsping.png)
+
+## Using BGP
+
+If you want implement an VPN between AWS and Azure with BGP support, I recommend you to follow this article written by Adilson Countrin (Azure Cloud Solution Architect): 
+
+* [Azure VPN Gateway to AWS VGW with IKEv2 and BGP](https://github.com/adicout/lab/tree/master/Network/aws-vpn-to-azurevpngw-ikev2-bgp)
