@@ -158,7 +158,7 @@ And add the route to Azure subnet through the Virtual Private Gateway:
 
 ![saveawsroute](images/saveawsroute.png)
 
-### 12. Adding high availability
+## Adding high availability
 
 Now we can create a 2nd connection to ensure high availability. To do this let's create another Local Network Gateway which we will point to the public ip address of the IPSec tunnel #2 on the AWS
 
@@ -176,7 +176,7 @@ And in a few moments we'll have:
 
 With this, our VPN connection is established on both sides and the work is done. 
 
-### 13. Let's test!
+## 13. Let's test!
 
 First, let's add an Internet Gateway to our VPC at AWS. The Internet Gateway is a logical connection between an Amazon VPN and the Internet. This resource will allow us to connect through the test VM from their public ip through internet. This is not required for the VPN connection, is just for our test:
 
