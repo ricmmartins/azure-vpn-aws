@@ -17,24 +17,23 @@ So in this article I'll show to you how to setup using static routes. Below the 
    * [Create a Virtual Network and a Subnet](#2-create-a-virtual-network-and-a-subnet)
    * [Create the VPN Gateway](#3-create-the-vpn-gateway)
 
-[Configuring AWS](#configuring-aws)
- - [Create the Virtual Private Cloud (VPC)](#4-create-the-virtual-private-cloud-vpc)
- - [Create a subnet insite the VPC (Virtual Network)](#5-create-a-subnet-inside-the-vpc-virtual-network)
- - [Ceate a customer gateway pointing to the public ip address of Azure VPN Gateway](#6-ceate-a-customer-gateway-pointing-to-the-public-ip-address-of-azure-vpn-gateway)
- - [Create the virtual private gateway then attach to the VPC](#7-create-the-virtual-private-gateway-then-attach-to-the-vpc)
- - [Create a site-to-site VPN Connection](#8-create-a-site-to-site-vpn-connection)
- - [Download the configuration file](#9-download-the-configuration-file)
+2. [Configuring AWS](#configuring-aws)
+   * [Create the Virtual Private Cloud (VPC)](#4-create-the-virtual-private-cloud-vpc)
+   * [Create a subnet insite the VPC (Virtual Network)](#5-create-a-subnet-inside-the-vpc-virtual-network)
+   * [Ceate a customer gateway pointing to the public ip address of Azure VPN Gateway](#6-ceate-a-customer-gateway-pointing-to-the-public-ip-address-of-azure-vpn-gateway)
+   * [Create the virtual private gateway then attach to the VPC](#7-create-the-virtual-private-gateway-then-attach-to-the-vpc)
+   * [Create a site-to-site VPN Connection](#8-create-a-site-to-site-vpn-connection)
+   * [Download the configuration file](#9-download-the-configuration-file)
 
-[Adding the AWS information on Azure Configuration](#adding-the-aws-information-on-azure-configuration)
- - [Now let’s create the Local Network Gateway](#10-now-lets-create-the-local-network-gateway)
- - [Then let's create the connection on the Virtual Network Gateway](#11-then-lets-create-the-connection-on-the-virtual-network-gateway)
+3. [Adding the AWS information on Azure Configuration](#adding-the-aws-information-on-azure-configuration)
+   * [Now let’s create the Local Network Gateway](#10-now-lets-create-the-local-network-gateway)
+   * [Then let's create the connection on the Virtual Network Gateway](#11-then-lets-create-the-connection-on-the-virtual-network-gateway)
 
+4. [Adding high availability](#adding-high-availability)
 
-[Adding high availability](#adding-high-availability)
+5. [Let's test!](#13-lets-test)
 
-[Let's test!](#13-lets-test)
-
-[Using BGP](#using-bgp)
+6. [Using BGP](#using-bgp)
 
 
 ## Configuring Azure 
