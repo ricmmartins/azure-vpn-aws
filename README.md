@@ -12,10 +12,10 @@ So in this article I'll show to you how to setup using static routes. Below the 
 
 # Table of contents
 
-[Configuring Azure](#configuring-azure)
- - [Create a resoruce group on Azure to deploy the resources on that](#1-create-a-resource-group-on-azure-to-deploy-the--resources-on-that)
- - [Create a Virtual Network and a Subnet](#2-create-a-virtual-network-and-a-subnet)
- - [Create the VPN Gateway](#3-create-the-vpn-gateway)
+1. [Configuring Azure](#configuring-azure)
+   * [Create a resoruce group on Azure to deploy the resources on that](#1-create-a-resource-group-on-azure-to-deploy-the--resources-on-that)
+   * [Create a Virtual Network and a Subnet](#2-create-a-virtual-network-and-a-subnet)
+   * [Create the VPN Gateway](#3-create-the-vpn-gateway)
 
 [Configuring AWS](#configuring-aws)
  - [Create the Virtual Private Cloud (VPC)](#4-create-the-virtual-private-cloud-vpc)
