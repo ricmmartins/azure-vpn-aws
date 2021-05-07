@@ -10,6 +10,10 @@ So in this article I'll show to you how to setup using static routes. Below the 
 
 ![draw](images/draw.png)
 
+Regarding the High Availability, please note that on AWS, by default a VPN connection always will have 2 Public IPs, one per tunnel. On Azure it doesn't happens by default and in this case you will be using Active/Passive from Azure side.
+
+This means that we will be setting only one "node" from Azure VPN Gateway to stablish two VPN connections with AWS.  In case of a failure, the second node from Azure VPN Gateway will conect to AWS in a Active/Passive mode.
+
 # Table of contents
 
 1. [Configuring Azure](#configuring-azure)
