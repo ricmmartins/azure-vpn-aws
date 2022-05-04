@@ -237,6 +237,6 @@ Then we can test the connectivity betweeen Azure and AWS through our VPN connect
 
 ## Using BGP
 
-If you want implement an VPN between AWS and Azure with BGP support, I recommend you to follow this article written by Adilson Countrin (Cloud Solution Architect at Microsoft): 
+If you want implement an VPN between AWS and Azure with BGP support, I recommend you to follow this article: 
 
-   * [Azure VPN Gateway to AWS VGW with IKEv2 and BGP](https://github.com/adicout/lab/tree/master/Network/aws-vpn-to-azurevpngw-ikev2-bgp)
+   * [How to connect AWS and Azure using a BGP-enabled VPN gateway](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-aws-bgp)
