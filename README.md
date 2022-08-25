@@ -14,6 +14,8 @@ Regarding the high availability, please note that on AWS, by default a VPN conne
 
 This means that we will be setting only one "node" from Azure VPN Gateway to establish two VPN connections with AWS.  In case of a failure, the second node from Azure VPN Gateway will connect to AWS in a Active/Passive mode.
 
+Note: This article was published at https://techcommunity.microsoft.com/t5/fasttrack-for-azure/how-to-create-a-vpn-between-azure-and-aws-using-only-managed/ba-p/2281900 for a broader audience.
+
 # Table of contents
 
 1. [Configuring Azure](#configuring-azure)
